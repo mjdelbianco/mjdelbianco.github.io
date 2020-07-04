@@ -9,5 +9,19 @@
 <body>
   <h1>Hello my name is MJ</h1>
   <img src="./image1.png" alt="">
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register('service-worker.js')
+          .then(reg => {
+            console.log('Service worker registered! 😎', reg);
+          })
+          .catch(err => {
+            console.log('😥 Service worker registration failed: ', err);
+          });
+      });
+    }
+    </script>
+    <!-- or script src="register service js separate file" -->
 </body>
 </html>
