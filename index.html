@@ -3,9 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Galada&family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" class="css">
   <link rel="manifest" href="./manifest.json">
   <meta name="description" content="MJ's portfolio page">
-  <title>Document</title>
+  <title>MJDB</title>
 
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -29,8 +31,24 @@
   <link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png">
 </head>
 <body>
-  <h1>Hello my name is MJ</h1>
-  <img src="./image1.png" alt="">
+  <div class="main">
+      <!-- <img src="image1.png" alt="Mj's photo"> -->
+    <h2>Hello<span class="exclamation">! </span><span class="name"> I'm MJ,</span></h2>
+    <h3> a fullstack software developer.</h3>
+    <div class="info">
+      <a href="codeworks.me">student @ codeworks</a>
+      <a href="mailto: marijana.delbiancos@gmail.com">marijana.delbianco@gmail.com</a>
+
+      <a href="tel:+393246382031">+39 324 638 2031</a>
+
+      <a href="www.linkedin.com/in/marijanadelbianco"><img src="https://img.icons8.com/ios-filled/50/000000/linkedin.png"/></a>
+
+      <a href="https://github.com/mjdelbianco"><img src="https://img.icons8.com/ios-filled/50/000000/github.png"/></a>
+
+    </div>
+
+
+  </div>
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', function() {
@@ -44,6 +62,8 @@
       });
     }
     </script>
+
     <!-- or script src="register service js separate file" -->
 </body>
 </html>
+
